@@ -1,0 +1,66 @@
+   ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    width:100%;;
+   }
+   ul li {
+    float:left;
+   }
+   ul li a{
+    display:block;
+    background-color:white;
+    padding:8px 16px;
+    color:black;
+    text-decoration:none;
+    text-align:center;
+   }
+   li a.active{
+      background-color:green;
+      color:white;
+    }
+    li a:hover:not(.active){
+       background-color:black;
+       color:white;
+    }
+    .handleclick{
+        color: black;
+        background-color: transparent;
+    }
+    body {
+     background-image: url("clav.png");
+     background-repeat: no-repeat;
+     background-position: top cover;
+     background-size: cover; 
+     background-attachment: fixed;
+    }
+    html,body{
+        margin:0;
+        height:100%;
+    }
+    .video-container{
+        margin: 200px;
+        justify-content: center;
+        display: flex;
+    }
+    .dropdown-content{
+        display:none;
+        top:100%;
+        margin:0;
+        padding:0;
+        background-color:white;
+        list-style-type:none;
+        position:absolute;
+    }
+    .dropdown li{
+        float:none;
+    }
+    .dropdown li a{
+        text-align:left;
+    }
+    .dropdown{
+        position:relative;
+    }
+    .dropdown:hover .dropdown-content{
+        display:block;
+    }
